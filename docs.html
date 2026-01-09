@@ -1,32 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التطوير | PSES Network</title>
+  <meta name="description" content="دليل المطورين لـ PSES: تشغيل النود، أوامر CLI، وواجهة RPC.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="logo/ChatGPT Image Jan 9, 2026 at 08_15_15 PM.png" alt="PSES Logo">
+        <div class="brand__text">
+          <span>PSES Network</span>
+          <small>Distributed Compute & AI</small>
+        </div>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="ai.html">مهام الذكاء</a>
+        <a href="market.html">سوق P2P</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="network.html">الورقة البيضاء</a>
+        <a href="docs.html">التطوير</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">القائمة</button>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="wallet.html">Wallet</a>
-  <a href="market.html">P2P Market</a>
-  <a href="ai.html">AI Tasks</a>
-  <a href="network.html">Network</a>
-  <a href="docs.html" class="active">Docs</a>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="reveal">
+          <span class="tag">Developer Docs</span>
+          <h1>دليل المطورين لتشغيل النود وربط الأدوات.</h1>
+          <p>تشغيل سريع، إعدادات الشبكة، وأهم أوامر RPC المستخدَمة في الأدوات واللوحات.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="network.html">الورقة البيضاء</a>
+            <a class="btn btn--ghost" href="wallet.html">المحفظة</a>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_18_13 PM.png" alt="Developer console">
+          </div>
+        </div>
+      </div>
+    </section>
 
-<main class="page">
-  <h1>Documentation</h1>
-  <ul>
-    <li>What is PSES Network</li>
-    <li>Mining & rewards</li>
-    <li>P2P trading rules</li>
-    <li>AI task execution model</li>
-  </ul>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">تشغيل سريع</h2>
+          <div class="code-block ltr">
+            cargo run -p pses-node
+            <br>
+            cargo run -p pses-wallet-cli -- rpc-get-info
+          </div>
+        </div>
+        <div>
+          <h2 class="section__title">ملفات الإعداد</h2>
+          <ul class="list">
+            <li>pses-node.toml لإعدادات النود الأساسية.</li>
+            <li>pses-open-testnet.toml لتفعيل شبكة P2P مفتوحة.</li>
+            <li>تفعيل CORS للواجهات عبر rpc_cors_allow_origin.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <p>Whitepaper & GitHub links will be added here.</p>
-</main>
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">RPC الأساسية</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>الحالة</h3>
+            <p>get_info / get_stats / get_tip</p>
+          </article>
+          <article class="card">
+            <h3>الميمبول</h3>
+            <p>get_mempool / get_mempool_stats</p>
+          </article>
+          <article class="card">
+            <h3>P2P</h3>
+            <p>p2p_list_peers / p2p_sync / p2p_ping</p>
+          </article>
+          <article class="card">
+            <h3>التعدين</h3>
+            <p>mine_block / get_mining / set_mining</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">مثال RPC</h2>
+          <div class="code-block ltr">
+            curl -s -X POST http://127.0.0.1:8337/rpc \\
+            <br>
+            -H 'Content-Type: application/json' \\
+            <br>
+            -d '{"id":1,"method":"get_tip","params":{}}'
+          </div>
+        </div>
+        <div>
+          <h2 class="section__title">اختبارات سريعة</h2>
+          <ul class="list">
+            <li>cargo test -p pses-node --test happy_path</li>
+            <li>cargo test -p pses-node --test rpc_smoke</li>
+            <li>cargo test -p pses-wallet-cli</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>Developer Docs</h4>
+        <p>واجهة تشغيل مبسطة لتسريع التجربة وتكرار الاختبارات.</p>
+      </div>
+      <div>
+        <h4>روابط</h4>
+        <p><a href="network.html">الورقة البيضاء</a></p>
+        <p><a href="ai.html">طبقة المهام</a></p>
+      </div>
+      <div>
+        <h4>الدعم</h4>
+        <p>dev@pses.network</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

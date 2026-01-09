@@ -1,26 +1,180 @@
-<main class="home">
-  <section class="home-hero">
-    <h1>PSES Network</h1>
-    <p class="lead">
-      Decentralized AI & Blockchain Platform<br>
-      Wallet • P2P Market • AI Compute
-    </p>
-
-    <div class="home-actions">
-      <a href="wallet.html" class="btn btn-primary">Wallet</a>
-      <a href="market.html" class="btn">P2P Market</a>
-      <a href="ai.html" class="btn">AI Tasks</a>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSES Network | البنية الأساسية لشبكة الحوسبة اللامركزية</title>
+  <meta name="description" content="PSES Network: سلسلة بلوك تشين للحوسبة الموزعة وتنفيذ مهام الذكاء الاصطناعي عبر شبكة P2P قابلة للتوسع.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="logo/ChatGPT Image Jan 9, 2026 at 08_15_15 PM.png" alt="PSES Logo">
+        <div class="brand__text">
+          <span>PSES Network</span>
+          <small>Distributed Compute & AI</small>
+        </div>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="ai.html">مهام الذكاء</a>
+        <a href="market.html">سوق P2P</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="network.html">الورقة البيضاء</a>
+        <a href="docs.html">التطوير</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">القائمة</button>
     </div>
-  </section>
+  </header>
 
-  <section class="home-info">
-    <h2>What is PSES?</h2>
-    <p>
-      PSES Network is a decentralized ecosystem where users can own a wallet,
-      trade directly with miners through a P2P market, and run AI tasks on
-      distributed hardware.
-    </p>
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="reveal">
+          <span class="tag">بنية تحتية للحوسبة المفيدة</span>
+          <h1>شبكة بلوك تشين حقيقية لتنفيذ مهام الذكاء الاصطناعي والحوسبة الموزعة.</h1>
+          <p>
+            PSES تقدم نموذج Useful Proof of Work حيث كل دورة معالجة تقابل مهمة قابلة للتحقق.
+            بنية قابلة للتوسّع: نود موحدة، P2P فعّال، ومحفظة متقدمة للمدفوعات والمكافآت.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="network.html">اقرأ الورقة البيضاء</a>
+            <a class="btn btn--ghost" href="docs.html">دليل المطور</a>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_05_45 PM.png" alt="P2P Network Visual">
+          </div>
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_18_13 PM.png" alt="Compute Fabric">
+          </div>
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_22_59 PM.png" alt="AI Execution">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <a href="docs.html" class="link">Read Documentation →</a>
-  </section>
-</main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">لماذا PSES؟</h2>
+        <p class="section__lead">شبكة مصممة لتسليم قيمة حقيقية، وليس فقط إثباتات حسابية فارغة.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Useful Proof of Work</h3>
+            <p>المهام الواقعية تُحوّل الجهد الحوسبي إلى نتائج قابلة للتحقق داخل السلسلة.</p>
+          </article>
+          <article class="card">
+            <h3>تنفيذ موزّع ومرن</h3>
+            <p>أجهزة مختلفة تشارك بنفس البروتوكول، بمتطلبات تشغيل منخفضة وشبكة مرنة.</p>
+          </article>
+          <article class="card">
+            <h3>تحقق متعدد الطبقات</h3>
+            <p>إعادة التنفيذ + مقارنة النتائج لتقليل الثقة وتعزيز الموثوقية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">المكوّنات الأساسية</h2>
+          <p class="section__lead">المنظومة جاهزة للتوسّع: سلسلة + P2P + محفظة + واجهات تشغيل.</p>
+          <ul class="list">
+            <li>نود موحّدة تقوم بدور العامل أو الطالب بشكل ديناميكي.</li>
+            <li>طبقة بلوك تشين مع PoW، وضبط صعوبة مبسّط.</li>
+            <li>RPC واضح لربط الأدوات ولوحات المراقبة.</li>
+            <li>محفظة CLI ونسخة سطح مكتب جاهزة للتوسعة.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="stats">
+            <div class="stat">
+              <strong>v1</strong>
+              <span>سكافولد إنتاجي قابل للتوسعة</span>
+            </div>
+            <div class="stat">
+              <strong>+12</strong>
+              <span>واجهات RPC حالية</span>
+            </div>
+            <div class="stat">
+              <strong>P2P</strong>
+              <span>تزامن/تبادل رسائل مباشر</span>
+            </div>
+            <div class="stat">
+              <strong>AI</strong>
+              <span>مهام inference حسابية أولية</span>
+            </div>
+          </div>
+          <div class="callout" style="margin-top: 18px;">
+            مصمم لمرحلة الشبكة المفتوحة مع مراقبة مستمرة للـ mempool والتزامن.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">خارطة الطريق التقنية</h2>
+        <p class="section__lead">مسار واضح من البنية الأساسية إلى سوق المهام والذكاء الاصطناعي.</p>
+        <div class="timeline">
+          <div class="timeline-item">Phase 1: P2P مستقر + محفظة + تعدين أولي + مهام بسيطة.</div>
+          <div class="timeline-item">Phase 2: سوق المهام، نظام سمعة، توسيع RPC.</div>
+          <div class="timeline-item">Phase 3: جدولة GPU، تحقق متقدم، تحسينات AI.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">تشغيل سريع للمطورين</h2>
+          <p class="section__lead">ابدأ تشغيل العقدة والمحفظة في دقائق.</p>
+          <div class="code-block ltr">
+            cargo run -p pses-node
+            <br>
+            cargo run -p pses-wallet-cli -- rpc-get-info
+          </div>
+        </div>
+        <div>
+          <h2 class="section__title">ماذا بعد؟</h2>
+          <ul class="list">
+            <li>تفعيل شبكة Testnet مفتوحة مع P2P عام وRPC محلي.</li>
+            <li>ربط لوحات مراقبة عبر RPC وCORS.</li>
+            <li>البدء في نمذجة مهام AI القابلة للتحقق.</li>
+          </ul>
+          <div class="hero__actions" style="margin-top: 18px;">
+            <a class="btn btn--primary" href="ai.html">استكشف طبقة المهام</a>
+            <a class="btn btn--ghost" href="network.html">اقرأ الرؤية كاملة</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>PSES Network</h4>
+        <p>شبكة بلوك تشين لتنفيذ حوسبة حقيقية، مع نموذج مكافآت شفاف وقابل للتوسع.</p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <p><a href="network.html">الورقة البيضاء</a></p>
+        <p><a href="docs.html">دليل المطور</a></p>
+        <p><a href="wallet.html">المحفظة</a></p>
+      </div>
+      <div>
+        <h4>التواصل</h4>
+        <p>info@pses.network</p>
+        <p>Open Testnet قيد التفعيل</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,35 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>AI Tasks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مهام الذكاء | PSES Network</title>
+  <meta name="description" content="طبقة مهام الذكاء الاصطناعي والحوسبة الموزعة في شبكة PSES.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="logo/ChatGPT Image Jan 9, 2026 at 08_15_15 PM.png" alt="PSES Logo">
+        <div class="brand__text">
+          <span>PSES Network</span>
+          <small>Distributed Compute & AI</small>
+        </div>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="ai.html">مهام الذكاء</a>
+        <a href="market.html">سوق P2P</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="network.html">الورقة البيضاء</a>
+        <a href="docs.html">التطوير</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">القائمة</button>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="wallet.html">Wallet</a>
-  <a href="market.html">P2P Market</a>
-  <a href="ai.html" class="active">AI Tasks</a>
-  <a href="network.html">Network</a>
-  <a href="docs.html">Docs</a>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="reveal">
+          <span class="tag">AI Execution Layer</span>
+          <h1>طبقة تنفيذ مهام الذكاء الاصطناعي والحوسبة المفيدة.</h1>
+          <p>
+            مهام قابلة للتحقق، موزعة على شبكة P2P، وبنموذج مكافآت يربط الجهد الحوسبي بالقيمة الفعلية.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="network.html">تفاصيل البروتوكول</a>
+            <a class="btn btn--ghost" href="docs.html">واجهات RPC</a>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_20_45 PM.png" alt="AI compute">
+          </div>
+        </div>
+      </div>
+    </section>
 
-<main class="page">
-  <h1>AI Tasks</h1>
-  <p>
-    Run AI inference or compute tasks on decentralized nodes.
-  </p>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">دورة حياة المهمة</h2>
+          <ul class="list">
+            <li>Task Submitted → تقسيم إلى وحدات تنفيذ قابلة للتوزيع.</li>
+            <li>توزيع الوحدات على العاملين مع تعريف الموارد المتاحة.</li>
+            <li>تنفيذ + إرسال النتائج إلى الشبكة.</li>
+            <li>تحقق متعدد العقد ومقارنة النتائج.</li>
+            <li>تثبيت إيصالات التنفيذ ومكافآت داخل السلسلة.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="section__title">أنواع المهام (المرحلة الأولى)</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>AI Inference</h3>
+              <p>تشغيل forward pass لنماذج قابلة للتكرار.</p>
+            </article>
+            <article class="card">
+              <h3>حوسبة رقمية</h3>
+              <p>عمليات رياضية كثيفة وقابلة للتحقق.</p>
+            </article>
+            <article class="card">
+              <h3>تحويل بيانات</h3>
+              <p>معالجة بيانات بصيغ ثابتة ومخرجات محددة.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <ol>
-    <li>Select task type</li>
-    <li>Set budget</li>
-    <li>Network executes & returns result</li>
-  </ol>
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">آلية التحقق</h2>
+          <p class="section__lead">بدون ثقة مباشرة في أي عامل.</p>
+          <ul class="list">
+            <li>تنفيذ مكرر على أكثر من عقدة.</li>
+            <li>مقارنة النتائج وتحديد الاختلافات.</li>
+            <li>تصميم مهام حتمية (Deterministic).</li>
+            <li>سمعة مستقبلية مبنية على سجل الأداء.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="section__title">معادلة المكافآت</h2>
+          <div class="code-block ltr">
+            reward = base_reward × complexity_factor × time_factor × verification_score
+          </div>
+          <p class="section__lead" style="margin-top: 14px;">
+            العوامل تشمل استهلاك الموارد، مدة التنفيذ، وتعادل النتائج عبر الشبكة.
+          </p>
+          <div class="callout">تدريب النماذج الثقيلة مؤجل للمرحلة القادمة لضمان الأمان والخصوصية.</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <p><strong>Status:</strong> AI compute layer under design</p>
-</main>
-
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>طبقة AI في PSES</h4>
+        <p>مصممة لإطلاق مهام حقيقية بموثوقية عالية وحواجز مشاركة منخفضة.</p>
+      </div>
+      <div>
+        <h4>روابط</h4>
+        <p><a href="network.html">الورقة البيضاء</a></p>
+        <p><a href="docs.html">RPC & API</a></p>
+      </div>
+      <div>
+        <h4>حالة التطوير</h4>
+        <p>النسخة التجريبية قيد التطوير</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

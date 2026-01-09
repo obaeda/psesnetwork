@@ -1,31 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Network Status</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer White Paper | PSES Network</title>
+  <meta name="description" content="الورقة البيضاء التقنية لشبكة PSES: بنية P2P، طبقة بلوك تشين، ونموذج المهام القابلة للتحقق.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="logo/ChatGPT Image Jan 9, 2026 at 08_15_15 PM.png" alt="PSES Logo">
+        <div class="brand__text">
+          <span>PSES Network</span>
+          <small>Distributed Compute & AI</small>
+        </div>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="ai.html">مهام الذكاء</a>
+        <a href="market.html">سوق P2P</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="network.html">الورقة البيضاء</a>
+        <a href="docs.html">التطوير</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">القائمة</button>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="wallet.html">Wallet</a>
-  <a href="market.html">P2P Market</a>
-  <a href="ai.html">AI Tasks</a>
-  <a href="network.html" class="active">Network</a>
-  <a href="docs.html">Docs</a>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="reveal">
+          <span class="tag">Developer White Paper</span>
+          <h1>شبكة PSES لتنفيذ الحوسبة الموزعة والذكاء الاصطناعي.</h1>
+          <p>
+            ورقة تقنية توضّح البنية، طبقة P2P، نموذج المهام القابلة للتحقق، وآلية المكافآت.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="docs.html">دليل التشغيل</a>
+            <a class="btn btn--ghost" href="index.html">العودة للرئيسية</a>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_18_13 PM.png" alt="Developer blueprint">
+          </div>
+        </div>
+      </div>
+    </section>
 
-<main class="page">
-  <h1>Network Status</h1>
-  <p>Live status will be available via public read-only API.</p>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">جدول المحتوى</h2>
+          <div class="toc">
+            <a href="#overview">1. Overview</a>
+            <a href="#goals">2. Design Goals</a>
+            <a href="#architecture">3. Network Architecture</a>
+            <a href="#blockchain">4. Blockchain Layer</a>
+            <a href="#tasks">5. Task Execution Model</a>
+            <a href="#verification">6. Verification Strategy</a>
+            <a href="#rewards">7. Reward Mechanism</a>
+            <a href="#wallet-rpc">8. Wallet & RPC</a>
+            <a href="#security">9. Security Considerations</a>
+            <a href="#extensibility">10. Extensibility</a>
+            <a href="#workflow">11. Developer Workflow</a>
+            <a href="#roadmap">12. Roadmap</a>
+            <a href="#philosophy">13. Philosophy</a>
+            <a href="#conclusion">14. Conclusion</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="section__title">ملخص سريع</h2>
+          <ul class="list">
+            <li>Useful Proof of Work = قيمة عملية قابلة للتحقق.</li>
+            <li>شبكة P2P برسائل ثنائية وإطار ثابت الطول.</li>
+            <li>نود واحدة تؤدي أدوار متعددة ديناميكيًا.</li>
+            <li>مكافآت مرتبطة بوقت التنفيذ والتعقيد والدقة.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <ul>
-    <li>Seed node: seed1.psesnetwork.com:9333</li>
-    <li>P2P: active</li>
-    <li>RPC: private</li>
-  </ul>
-</main>
+    <section class="section section--alt" id="overview">
+      <div class="container">
+        <h2 class="section__title">1. Overview</h2>
+        <p class="section__lead">
+          PSES Network عبارة عن بلوك تشين مخصص لتوزيع أحمال الحوسبة الفعلية (AI inference، معالجة بيانات، حوسبة عامة)
+          عبر شبكة P2P من عقد متغايرة العتاد.
+        </p>
+      </div>
+    </section>
 
+    <section class="section" id="goals">
+      <div class="container">
+        <h2 class="section__title">2. Design Goals</h2>
+        <div class="grid">
+          <article class="card">تنفيذ حوسبة لامركزي ومفيد.</article>
+          <article class="card">مشاركة متعددة العتاد (CPU/GPU/RAM).</article>
+          <article class="card">نتائج قابلة للتحقق مع أقل ثقة ممكنة.</article>
+          <article class="card">هندسة معيارية قابلة للإضافة والتطوير.</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="architecture">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">3. Network Architecture</h2>
+          <p class="section__lead">النود موحدة في التنفيذ، والأدوار ديناميكية.</p>
+          <ul class="list">
+            <li>Worker Node: تنفيذ المهام المعينة.</li>
+            <li>Requester Node: إرسال المهام للشبكة.</li>
+            <li>Validator Logic: مدمج في البروتوكول نفسه.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>3.2 P2P Layer</h3>
+          <ul class="list">
+            <li>بروتوكول TCP برسائل ثنائية وإطار ثابت.</li>
+            <li>أنواع الرسائل: Handshake, Inv, GetData, SubmitTask, SubmitResult.</li>
+            <li>اكتشاف نظراء عبر Seed + Gossip.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blockchain">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">4. Blockchain Layer</h2>
+          <ul class="list">
+            <li>كل بلوك يحتوي Header + Hash + Difficulty.</li>
+            <li>Task receipts + Reward transactions.</li>
+            <li>الترتيب حسب chainwork وليس الطول فقط.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>4.2 Consensus</h3>
+          <p class="section__lead">PoW هو الأساس، والمهام تضاعف القيمة الاقتصادية للعمل.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="tasks">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">5. Task Execution Model</h2>
+          <ul class="list">
+            <li>Task submitted → split → توزيع على الشبكة.</li>
+            <li>تنفيذ، جمع النتائج، وتحقيق موثوقية.</li>
+            <li>مكافأة داخل السلسلة بعد التحقق.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>5.2 Task Types</h3>
+          <ul class="list">
+            <li>AI inference (forward pass).</li>
+            <li>حوسبة رقمية كثيفة.</li>
+            <li>تحويل بيانات حتمي.</li>
+            <li>التدريب والنماذج الحساسة مؤجلة.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="verification">
+      <div class="container">
+        <h2 class="section__title">6. Verification Strategy</h2>
+        <div class="grid">
+          <article class="card">تنفيذ متكرر على أكثر من عقدة.</article>
+          <article class="card">تصميم مهام حتمية لتجنب التلاعب.</article>
+          <article class="card">نتائج مقارنة وإسناد سمعة لاحقًا.</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="rewards">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">7. Reward Mechanism</h2>
+          <div class="code-block ltr">
+            reward = base_reward × complexity_factor × time_factor × verification_score
+          </div>
+        </div>
+        <div>
+          <p class="section__lead">العوامل تشمل: CPU/GPU usage، مدة التنفيذ، ودقة النتائج.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="wallet-rpc">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">8. Wallet & RPC</h2>
+          <ul class="list">
+            <li>مفاتيح مشتقة بشكل حتمي.</li>
+            <li>CLI + Desktop مع تشفير مخطط.</li>
+            <li>RPC لدعم dashboards وأدوات التطوير.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Core RPC</h3>
+          <ul class="list">
+            <li>get_balance, get_chain_info</li>
+            <li>submit_task, get_task_status</li>
+            <li>get_p2p_stats</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="security">
+      <div class="container">
+        <h2 class="section__title">9. Security Considerations</h2>
+        <ul class="list">
+          <li>لا بيانات خاصة حساسة في المراحل الأولى.</li>
+          <li>Sandbox للمهام + تحديد معدلات الرسائل.</li>
+          <li>مقاومة Sybil عبر كلفة اقتصادية.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="extensibility">
+      <div class="container">
+        <h2 class="section__title">10. Extensibility</h2>
+        <div class="grid">
+          <article class="card">Handlers لمهام جديدة.</article>
+          <article class="card">محركات تنفيذ إضافية.</article>
+          <article class="card">دعم TEEs وZK proofs لاحقًا.</article>
+          <article class="card">قنوات دفع Layer-2 مستقبلية.</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="workflow">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">11. Developer Workflow</h2>
+          <div class="code-block ltr">
+            pses-node --config pses-node.toml
+            <br>
+            pses-wallet-cli
+            <br>
+            cargo build --release
+          </div>
+        </div>
+        <div>
+          <h3>تشغيل سريع</h3>
+          <p class="section__lead">السكافولد الحالي يوفر RPC، محفظة، ومراقبة mempool.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="container">
+        <h2 class="section__title">12. Roadmap</h2>
+        <div class="timeline">
+          <div class="timeline-item">Phase 1: شبكة P2P مستقرة + محفظة + تعدين.</div>
+          <div class="timeline-item">Phase 2: سوق مهام + سمعة + توسيع RPC.</div>
+          <div class="timeline-item">Phase 3: تحسينات AI وجدولة GPU.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="philosophy">
+      <div class="container">
+        <h2 class="section__title">13. Philosophy</h2>
+        <p class="section__lead">الحوسبة يجب أن تكون عادلة وغير محتكرة. كل جهاز خامل هو فرصة ضائعة.</p>
+      </div>
+    </section>
+
+    <section class="section" id="conclusion">
+      <div class="container">
+        <h2 class="section__title">14. Conclusion</h2>
+        <p class="section__lead">
+          PSES Network ليست سلسلة مضاربة، بل بنية تحتية لتوزيع الحوسبة الحقيقية وتحرير قدرات الأجهزة.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>Developer White Paper</h4>
+        <p>نسخة v1 قابلة للتحديث مع تطور البروتوكول.</p>
+      </div>
+      <div>
+        <h4>روابط</h4>
+        <p><a href="docs.html">التطوير</a></p>
+        <p><a href="ai.html">طبقة المهام</a></p>
+      </div>
+      <div>
+        <h4>التواصل</h4>
+        <p>paper@pses.network</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

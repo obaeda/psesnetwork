@@ -1,36 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>PSES Wallet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحفظة | PSES Network</title>
+  <meta name="description" content="محفظة PSES لإدارة الهوية والمكافآت والمدفوعات داخل الشبكة.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="logo/ChatGPT Image Jan 9, 2026 at 08_15_15 PM.png" alt="PSES Logo">
+        <div class="brand__text">
+          <span>PSES Network</span>
+          <small>Distributed Compute & AI</small>
+        </div>
+      </a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="ai.html">مهام الذكاء</a>
+        <a href="market.html">سوق P2P</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="network.html">الورقة البيضاء</a>
+        <a href="docs.html">التطوير</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">القائمة</button>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="wallet.html" class="active">Wallet</a>
-  <a href="market.html">P2P Market</a>
-  <a href="ai.html">AI Tasks</a>
-  <a href="network.html">Network</a>
-  <a href="docs.html">Docs</a>
-</nav>
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="reveal">
+          <span class="tag">Wallet + Identity</span>
+          <h1>محفظة PSES هي هوية الشبكة ومحرك المكافآت.</h1>
+          <p>
+            تدير المفاتيح، الأرصدة، ومكافآت التعدين. تدعم CLI وDesktop مع تشفير مخطط وخيارات متقدمة.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="docs.html">أوامر CLI</a>
+            <a class="btn btn--ghost" href="network.html">الرؤية التقنية</a>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <div class="media-card">
+            <img src="co-images/ChatGPT Image Dec 25, 2025 at 09_22_59 PM.png" alt="Wallet UI">
+          </div>
+        </div>
+      </div>
+    </section>
 
-<main class="page">
-  <h1>Wallet</h1>
-  <p>
-    The PSES Wallet is the core identity of the network.
-    Every user owns keys, balances, and mining rewards.
-  </p>
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">القدرات الرئيسية</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>مفاتيح حتمية</h3>
+            <p>مفاتيح مشتقة بدقة لتسهيل النسخ الاحتياطي وإدارة العناوين.</p>
+          </article>
+          <article class="card">
+            <h3>مدفوعات آمنة</h3>
+            <p>إرسال واستقبال PSES مع مراقبة للـ UTXO والرصيد.</p>
+          </article>
+          <article class="card">
+            <h3>تكامل RPC</h3>
+            <p>واجهة واضحة لبناء لوحات التحكم والأدوات المساندة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <ul>
-    <li>Create & backup wallet</li>
-    <li>Send & receive PSES</li>
-    <li>Track mining rewards</li>
-  </ul>
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2 class="section__title">حالة التطوير</h2>
+          <ul class="list">
+            <li>CLI جاهز للتشغيل وإدارة المفاتيح.</li>
+            <li>نسخة Desktop قيد التوسعة مع دعم متعدد اللغات.</li>
+            <li>تشفير الملفات والدخول بكلمة مرور مخطط للمرحلة القادمة.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="section__title">إطلاق سريع</h2>
+          <div class="code-block ltr">
+            cargo run -p pses-wallet-cli -- new
+            <br>
+            cargo run -p pses-wallet-cli -- rpc-get-balance --address &lt;hex&gt;
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <p><strong>Status:</strong> Coming soon</p>
-</main>
-
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>المحفظة</h4>
+        <p>واجهة الهوية والمكافآت داخل شبكة PSES.</p>
+      </div>
+      <div>
+        <h4>روابط</h4>
+        <p><a href="docs.html">دليل الأوامر</a></p>
+        <p><a href="ai.html">طبقة المهام</a></p>
+      </div>
+      <div>
+        <h4>الحالة</h4>
+        <p>الإصدار التجريبي قيد التطوير</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

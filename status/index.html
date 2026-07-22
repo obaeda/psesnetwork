@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>حالة خدمات PSES</title>
+  <meta name="description" content="صفحة الحالة المستقلة لخدمات تطبيق PSES.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090b12;
+      --card: #121522;
+      --text: #f7f7fb;
+      --muted: #a7a9b8;
+      --line: #292d3d;
+      --ok: #35d07f;
+      --accent: #9b6cff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 80% 0, #392469 0, transparent 38%),
+        var(--bg);
+      line-height: 1.7;
+    }
+    main { width: min(760px, 92%); margin: 0 auto; padding: 56px 0; }
+    header { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .brand { font-weight: 800; letter-spacing: .06em; font-size: 1.4rem; }
+    .back { color: #d8caff; text-decoration: none; }
+    .hero, .services, .note {
+      margin-top: 28px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--card);
+      background: color-mix(in srgb, var(--card) 92%, transparent);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .32);
+    }
+    .hero { padding: 30px; }
+    .state { display: flex; gap: 12px; align-items: center; color: #baf2d2; font-weight: 750; }
+    .dot { width: 13px; height: 13px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 7px rgba(53, 208, 127, .12); }
+    h1 { margin: 18px 0 8px; font-size: clamp(2rem, 6vw, 3.1rem); line-height: 1.25; }
+    p { color: var(--muted); margin: 0; }
+    .updated { margin-top: 20px; font-size: .92rem; color: #d2d3dc; }
+    .services { overflow: hidden; }
+    .service { display: flex; justify-content: space-between; gap: 20px; padding: 19px 24px; border-bottom: 1px solid var(--line); }
+    .service:last-child { border-bottom: 0; }
+    .service span:last-child { color: #baf2d2; white-space: nowrap; }
+    .note { padding: 22px 24px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button { padding: 12px 18px; border-radius: 14px; color: white; text-decoration: none; border: 1px solid var(--line); }
+    .button.primary { background: linear-gradient(135deg, var(--accent), #7045d7); border-color: transparent; }
+    footer { margin-top: 34px; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 520px) {
+      main { padding-top: 30px; }
+      header, .service { align-items: flex-start; }
+      .service { flex-direction: column; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">PSES STATUS</div>
+      <a class="back" href="/">الموقع الرئيسي</a>
+    </header>
+
+    <!-- عند وجود حادث: غيّر النص والحالة والخدمات المتأثرة ووقت التحديث فقط. -->
+    <section class="hero" aria-labelledby="status-title">
+      <div class="state"><span class="dot" aria-hidden="true"></span>لا يوجد حادث نشط</div>
+      <h1 id="status-title">لا توجد حوادث تشغيلية مفتوحة</h1>
+      <p>هذه الصفحة مستضافة خارج Firebase لتبقى مرجعًا للمستخدمين أثناء أعطال التطبيق أو خدمات Google.</p>
+      <div class="updated">آخر تحديث يدوي: 23 يوليو 2026، 02:25 — توقيت فلسطين</div>
+    </section>
+
+    <section class="services" aria-label="حالة المكونات">
+      <div class="service"><span>تطبيق PSES والسوق</span><span>لا حادث معروف</span></div>
+      <div class="service"><span>الحسابات والطلبات</span><span>لا حادث معروف</span></div>
+      <div class="service"><span>الصور والفيديو</span><span>لا حادث معروف</span></div>
+      <div class="service"><span>الميزات الذكية</span><span>لا حادث معروف</span></div>
+    </section>
+
+    <section class="note">
+      <p>قد يتأخر التحديث اليدوي عدة دقائق عن الحالة الفعلية. عند وجود حادث سننشر هنا المكونات المتأثرة ووقت آخر تحديث بدل الاعتماد على التطبيق نفسه.</p>
+    </section>
+
+    <div class="actions">
+      <a class="button primary" href="https://app.psesnetwork.com/">فتح تطبيق PSES</a>
+      <a class="button" href="/">العودة إلى PSES Network</a>
+    </div>
+
+    <footer>صفحة حالة مستقلة — لا تحتوي بيانات حسابات أو مفاتيح تشغيلية.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,5 @@
+exclude:
+  - README.md
+  - PSESNETWORK_WEBSITE_CHECKPOINT_2026-08-14.md
+  - firebase.preview.json
+  - scripts

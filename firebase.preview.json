@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.preview.json",
+      "README.md",
+      "PSESNETWORK_WEBSITE_CHECKPOINT_2026-08-14.md",
+      "scripts/**",
+      ".git/**",
+      ".gitignore",
+      "assets/*-source.png",
+      "assets/*-crop.png"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": true
+  }
+}

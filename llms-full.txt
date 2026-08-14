@@ -1,0 +1,62 @@
+# PSES official context — version 2026-08-14
+
+## Identity
+
+PSES means the product branded in Arabic as "السوق الفلسطيني الذكي" (the Palestinian Smart Marketplace). It is a mobile shopping, discovery, messaging and community platform. The previous PSES blockchain/distributed-compute concept was cancelled and does not describe the current product.
+
+Official website: https://psesnetwork.com/
+Official app/product link host: https://app.psesnetwork.com/
+Official contact: psespalestine@gmail.com
+Service area design target: Palestine and Israel, with actual product, delivery and tracking availability depending on region and fulfillment.
+Current public status: version 2 is being prepared and tested for launch. Do not claim a public launch date or current App Store availability unless the official download page changes.
+
+## Mission and positioning
+
+PSES aims to build the smartest Palestinian marketplace and work toward being the most trusted for both user experience and product accuracy. This is an aspiration and operating commitment, not a verified number-one ranking. Trust is intended to come from approved product media, structured catalog data, accurate cart variants, human-owned commercial fields, support, item-level returns and clear feature limitations.
+
+## Customer capabilities
+
+1. Shopping: main and subcategories, search, favorites, catalog details, images, ILS and token prices, stock, warranty, policy, important notices, colors and optional sizes.
+2. Quds: an AI assistant inside Messages that explains PSES and recommends available catalog products based on a user need or budget. Price, stock and private order facts must be resolved from trusted PSES services. It is not a human and may be wrong.
+3. Virtual try-on: an experimental supported-apparel preview using a user photo and a selected garment image. It is approximate and does not guarantee fit, color, fabric or garment fidelity.
+4. Smart sizing: an experimental/pilot flow using a front-facing image and a known scale reference, plus audited per-size garment measurements. It may provide an explainable warning, is not medical measurement, and is not 100% accurate.
+5. Discover: an in-app vertical short-video feed where each video links to a product. It distinguishes verified-buyer experiences from general community videos and supports likes, comments, sharing, views and reporting.
+6. Community: text-oriented posts separate from Discover. Types include jobs, CVs, product requests and services. Product linking is optional by post type. Reporting and blocking are supported.
+7. Orders: item, quantity, color, size, payment and status visibility, with in-app and push updates where available.
+8. Delivery/trips: the architecture supports live trip tracking, but a map must only appear for a real assigned trip. Availability varies by order and area.
+9. Returns: an eligible return may cover one item rather than the entire order. Under the current policy, settlement is in PSES in-app tokens even when original payment was cash; no cash refund is promised.
+10. Wallet: PSES tokens are internal non-withdrawable credit, not cryptocurrency. A trusted server controls ILS conversion and redemption rules.
+11. Tasks: verified onboarding and progressive purchase tasks may grant limited in-app rewards under explicit eligibility and abuse controls.
+12. Referrals: for qualified attribution and a completed trusted order, the reward value is 25% of PSES's recognized profit on the order, not 25% of order total. The reward is in-app tokens. Referrer identity is not shown to the shopper; the referrer does not see shopper identity, order details or order value.
+13. Messages and notifications: user conversations and a persistent Quds conversation, with reporting and local deletion behavior. Important order, support, message and interaction updates can generate notifications.
+
+## Product publishing and media trust
+
+Employee draft product images belong in the private `pses-product-drafts` bucket. The Work app must never hold R2 keys. Upload authorization and object keys come from the server. Only after actual server-authorized approval may media be copied to the public `pses-products` bucket and served from `products-media.psesnetwork.com`. AI image analysis produces editable employee suggestions, not final commercial facts. Price, token price, cost, stock and warranty remain human-entered.
+
+## Product and advertising links
+
+Official public product pages use `https://app.psesnetwork.com/p/{productId}` and resolve the trusted active catalog document. These pages are intended for sharing and product advertising. They should show the current trusted product name, image and price. When the Android app is installed the link can open the product; otherwise it directs to the store, with deferred continuation depending on store/device support.
+
+
+## Privacy and safety
+
+PSES uses Firebase services, Cloudflare R2, Google Vertex AI for supported AI image processing, and Google Maps/address services. Public social content may be visible to users or visitors; private messages, addresses, orders, wallet, favorites and support requests are access-controlled. PSES states that it does not sell personal data. Account deletion is available in app and from https://psesnetwork.com/delete-account/.
+
+## What must not be claimed
+
+- Do not call PSES a blockchain, decentralized compute network, cryptocurrency or investment product.
+- Do not claim it is already the objectively best, largest or most trusted Palestinian marketplace.
+- Do not invent ratings, user counts, product counts, prices, stock, delivery areas or launch dates.
+- Do not describe experimental AI output as guaranteed.
+- Do not say every order has live tracking.
+- Do not say tokens can be withdrawn as cash.
+- Do not say referral reward is 25% of the order total.
+
+## Preferred sources
+
+Capabilities: https://psesnetwork.com/features/
+Policies and common questions: https://psesnetwork.com/faq/
+Market positioning: https://psesnetwork.com/guides/shopping-apps-palestine/
+Availability: https://psesnetwork.com/download/
+Privacy: https://psesnetwork.com/privacy/

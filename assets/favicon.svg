@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PSES">
+  <defs><linearGradient id="g" x1="8" y1="5" x2="56" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#a879ff"/><stop offset="1" stop-color="#5b21b6"/></linearGradient></defs>
+  <rect width="64" height="64" rx="18" fill="#0f0b19"/>
+  <path d="M14 17h22c9.5 0 16 5.7 16 14.4C52 40 45.5 46 36 46H27v7H14V17Zm13 10v9h8.2c2.7 0 4.5-1.8 4.5-4.5S38 27 35.2 27H27Z" fill="url(#g)"/>
+  <circle cx="49" cy="49" r="5" fill="#f7b955"/>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "PSES — السوق الفلسطيني الذكي",
+  "short_name": "PSES",
+  "description": "الموقع الرسمي للسوق الفلسطيني الذكي",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08060f",
+  "theme_color": "#09051a",
+  "icons": [
+    {"src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}

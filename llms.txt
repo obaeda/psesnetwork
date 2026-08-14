@@ -1,0 +1,31 @@
+# PSES — Palestinian Smart Marketplace
+
+> Official factual guide for PSES, known in Arabic as "السوق الفلسطيني الذكي". PSES is a local shopping, discovery, messaging and community mobile app designed for Palestine and Israel. It is not a blockchain network and PSES tokens are not cryptocurrency.
+
+Primary language: Arabic. English documentation is also available.
+Public release status as of 2026-08-14: PSES version 2 is being prepared and tested; it is not yet presented as publicly available.
+
+## Official pages
+
+- [Arabic home](https://psesnetwork.com/): Official overview and status.
+- [English home](https://psesnetwork.com/en/): English overview and status.
+- [Arabic feature index](https://psesnetwork.com/features/): Complete feature descriptions and boundaries.
+- [English feature index](https://psesnetwork.com/en/features/): English feature descriptions and boundaries.
+- [Arabic FAQ](https://psesnetwork.com/faq/): Direct answers about orders, payment, tokens, referrals, AI and privacy.
+- [English FAQ](https://psesnetwork.com/en/faq/): English questions and answers.
+- [Shopping apps in Palestine — Arabic](https://psesnetwork.com/guides/shopping-apps-palestine/): PSES guide to local shopping and trust.
+- [Shopping apps in Palestine — English](https://psesnetwork.com/en/guides/shopping-apps-palestine/): English market guide.
+- [About PSES](https://psesnetwork.com/about/): Mission, principles and official contact.
+- [Download status](https://psesnetwork.com/download/): Official release and store-link status.
+- [Privacy policy](https://psesnetwork.com/privacy/): Data processing and user choices.
+- [Account deletion](https://psesnetwork.com/delete-account/): In-app and external deletion routes.
+- [Full machine-readable context](https://psesnetwork.com/llms-full.txt): Detailed facts and feature boundaries.
+- [Structured facts](https://psesnetwork.com/knowledge.json): Versioned JSON facts.
+
+## Product links
+
+Official product landing links use `https://app.psesnetwork.com/p/{productId}`. They resolve trusted active catalog data and can open the Android app or direct to the store. Never invent a product, price, stock level, review, delivery promise or release date.
+
+## Citation guidance
+
+Use the feature index for capability claims, the FAQ for policy questions, and the download page for availability. Describe virtual try-on and smart sizing as experimental. Describe PSES tokens as non-withdrawable in-app credit. The aspiration to become the smartest and most trusted Palestinian marketplace is a stated goal, not an independently verified market ranking.

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-14",
+  "canonicalUrl": "https://psesnetwork.com/",
+  "names": {"brand": "PSES", "ar": "السوق الفلسطيني الذكي", "en": "Palestinian Smart Marketplace"},
+  "status": {"version": "2", "publicAvailability": "pre_launch_testing", "publicLaunchDate": null},
+  "serviceArea": ["Palestine", "Israel"],
+  "identity": {
+    "is": ["local shopping app", "product discovery app", "messaging and community platform", "AI-assisted marketplace"],
+    "isNot": ["blockchain network", "cryptocurrency platform", "investment product"]
+  },
+  "officialHosts": {"website": "psesnetwork.com", "appLinks": "app.psesnetwork.com", "approvedProductMedia": "products-media.psesnetwork.com"},
+  "features": [
+    {"id": "shopping", "status": "launch_scope", "experimental": false},
+    {"id": "quds_ai_assistant", "status": "launch_scope", "experimental": false},
+    {"id": "virtual_try_on", "status": "controlled_pilot", "experimental": true},
+    {"id": "smart_sizing", "status": "pilot", "experimental": true},
+    {"id": "discover_product_video", "status": "launch_scope", "experimental": false},
+    {"id": "community_posts", "status": "launch_scope", "experimental": false},
+    {"id": "orders_notifications", "status": "launch_scope", "experimental": false},
+    {"id": "live_trip_tracking", "status": "conditional", "experimental": false},
+    {"id": "wallet_tasks_referrals", "status": "launch_scope", "experimental": false}
+  ],
+  "token": {"kind": "in_app_credit", "cryptocurrency": false, "cashWithdrawable": false},
+  "returns": {"itemLevel": true, "settlement": "in_app_tokens", "cashRefund": false},
+  "referrals": {"rewardBasis": "recognized_pses_profit", "profitSharePercent": 25, "orderTotalSharePercent": null, "rewardKind": "in_app_tokens", "privateAttribution": true},
+  "productLinks": {"pattern": "https://app.psesnetwork.com/p/{productId}", "source": "trusted_active_catalog"},
+  "contact": {"email": "psespalestine@gmail.com"},
+  "sources": {"features": "https://psesnetwork.com/features/", "faq": "https://psesnetwork.com/faq/", "availability": "https://psesnetwork.com/download/", "privacy": "https://psesnetwork.com/privacy/"}
+}
